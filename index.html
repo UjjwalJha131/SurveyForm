@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+
+  <form class="form" id="survey-form">
+
+    <fieldset class="fieldset">
+
+      <section>
+      <label id="name-label" for="name">Name:</label><br>
+        <input class="name" type="text" id="name" placeholder="Enter your name" required />
+        </input>
+      </section>
+
+      <section>
+      <label id="email-label">Email:</label>
+        <input class="email" type="email" name="Email" id="email" placeholder="Enter your email" required />
+        </input>
+      </section>
+
+      <section>
+      <label id="number-label" for="number">Age (optional):</label>
+        <input class="age" type="number" name="Age" placeholder="Enter your age" id="number" min="18" max="120">
+        </input>
+      </section>
+
+      <section>
+      <label class="role" for="dropdown">
+        Which option best describes your current role ?</label>
+        <select id="dropdown" for="option">
+          <option>Front End Developer</option>
+          <option>Back End Developer</option>
+          <option>Full Stack Developer</option>
+        </select>
+      </section>
+
+      <section>
+    <fieldset>
+      <label id="suggest">Would you recommend FreeCodeCamp to a Friends ?</label>
+        <ul class="ul">
+          <li>
+            <input type="radio" value="1" name="btn1">
+            Definitely
+          </li>
+          </li>
+          <li>
+            <input type="radio" value="2" name="btn1">
+            Maybe
+          </li>
+          <li>
+            <input type="radio" value="3" name="btn1">
+            Not Sure
+          </li>
+        </ul>
+      </section>
+
+      <section>
+      <label for="dropdown">What is your favorite feature of freeCodeCamp ?</label>
+      <select class="select" name="dropdown" id="dropdown">
+        <option value="practice">Practice</option>
+        <option value="guidance">Guidance</option>
+        <option value="guidance">Project based learning</option>
+      </select>
+    </section>
+
+    <section>
+      <label id="suggest">What would you like to see improved ? (Check all that apply)</label>
+        <ul class="ul">
+          <li>
+            <input type="checkbox" value="1" name="btn1">
+            Front-end project
+          </li>
+          </li>
+          <li>
+            <input type="checkbox" value="2" name="btn1">
+            Back-end projects
+          </li>
+          <li>
+            <input type="checkbox" value="3" name="btn1">
+            JavaScript projects
+          </li>
+        </ul>
+      </section>
+
+      <section>
+      <div class="bottom-div">
+
+        <label for="comment" style="text-align: left;">Any comments or suggestions ?</label>
+        <textarea id="comment" placeholder="Enter Your comments here"></textarea>
+
+      </div>
+
+      <div class="btn">
+        <button class="button" id="submit" type="submit">Submit</button>
+      </div>
+    </section>
+
+
+
+
+
+
+  </form>
+</body>
+
+</html>
